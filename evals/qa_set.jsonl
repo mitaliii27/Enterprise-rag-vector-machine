@@ -1,0 +1,52 @@
+{"id": "q01", "question": "At what value do I need three competitive quotes?", "answerable": true, "doc": "procurement_policy", "evidence": "above EUR 25,000"}
+{"id": "q02", "question": "How long are blanket purchase orders valid?", "answerable": true, "doc": "procurement_policy", "evidence": "valid for 12 months"}
+{"id": "q03", "question": "How soon must an emergency purchase be approved after the fact?", "answerable": true, "doc": "procurement_policy", "evidence": "within 2 business days"}
+{"id": "q04", "question": "Which low-value catalogue orders skip approval?", "answerable": true, "doc": "procurement_policy", "evidence": "below EUR 1,000"}
+{"id": "q05", "question": "How much can a Department Head sign off?", "answerable": true, "doc": "delegation_of_authority", "evidence": "up to EUR 25,000"}
+{"id": "q06", "question": "What is the CFO's approval limit?", "answerable": true, "doc": "delegation_of_authority", "evidence": "up to EUR 500,000"}
+{"id": "q07", "question": "When does a contract need legal review?", "answerable": true, "doc": "delegation_of_authority", "evidence": "above EUR 250,000"}
+{"id": "q08", "question": "For how long may my approval authority be handed to a colleague while I am away?", "answerable": true, "doc": "delegation_of_authority", "evidence": "maximum of 30 days"}
+{"id": "q09", "question": "What is the maximum I can spend on a hotel per night in a Tier 1 city?", "answerable": true, "doc": "travel_expense_policy", "evidence": "EUR 180 per night"}
+{"id": "q10", "question": "What is the daily meal allowance?", "answerable": true, "doc": "travel_expense_policy", "evidence": "EUR 55"}
+{"id": "q11", "question": "By when must I file my expense report after a trip?", "answerable": true, "doc": "travel_expense_policy", "evidence": "within 30 days of the end of the trip"}
+{"id": "q12", "question": "How much per km do I get when driving my own car for work?", "answerable": true, "doc": "travel_expense_policy", "evidence": "EUR 0.30 per km"}
+{"id": "q13", "question": "Above what amount is a receipt mandatory?", "answerable": true, "doc": "travel_expense_policy", "evidence": "above EUR 25"}
+{"id": "q14", "question": "What price difference is tolerated when matching an invoice to the PO?", "answerable": true, "doc": "invoice_verification", "evidence": "2% or EUR 50"}
+{"id": "q15", "question": "Do we take early-payment discounts?", "answerable": true, "doc": "invoice_verification", "evidence": "2% if paid within 10 days"}
+{"id": "q16", "question": "What happens to an invoice that has no PO number?", "answerable": true, "doc": "invoice_verification", "evidence": "returned to the supplier"}
+{"id": "q17", "question": "When does an invoice need a second approver?", "answerable": true, "doc": "invoice_verification", "evidence": "above EUR 50,000"}
+{"id": "q18", "question": "How many days does it take to onboard a new vendor?", "answerable": true, "doc": "vendor_onboarding", "evidence": "5 business days"}
+{"id": "q19", "question": "How do we verify a supplier's request to change its bank account?", "answerable": true, "doc": "vendor_onboarding", "evidence": "call-back verification"}
+{"id": "q20", "question": "Which quality certificate must critical suppliers hold?", "answerable": true, "doc": "vendor_onboarding", "evidence": "ISO 9001 certification"}
+{"id": "q21", "question": "How quickly must I escalate a suspected personal data breach internally?", "answerable": true, "doc": "data_privacy_policy", "evidence": "within 24 hours"}
+{"id": "q22", "question": "How long are employee HR records retained after they leave?", "answerable": true, "doc": "data_privacy_policy", "evidence": "7 years after employment ends"}
+{"id": "q23", "question": "What is the deadline for answering a data subject request?", "answerable": true, "doc": "data_privacy_policy", "evidence": "within 30 days"}
+{"id": "q24", "question": "Am I allowed to paste customer personal data into an AI assistant?", "answerable": true, "doc": "data_privacy_policy", "evidence": "DPIA"}
+{"id": "q25", "question": "At what time is the sub-ledger cutoff on the first working day?", "answerable": true, "doc": "month_end_close", "evidence": "18:00"}
+{"id": "q26", "question": "On which working day do financial statements go to the Controller?", "answerable": true, "doc": "month_end_close", "evidence": "Working day 6"}
+{"id": "q27", "question": "From what amount must I book an accrual?", "answerable": true, "doc": "month_end_close", "evidence": "above EUR 2,000"}
+{"id": "q28", "question": "What is the minimum purchase price for capitalising an item?", "answerable": true, "doc": "asset_capitalization", "evidence": "at least EUR 2,500"}
+{"id": "q29", "question": "Over how many years do we depreciate laptops?", "answerable": true, "doc": "asset_capitalization", "evidence": "laptops: 3 years"}
+{"id": "q30", "question": "What useful life applies to machinery?", "answerable": true, "doc": "asset_capitalization", "evidence": "machinery: 10 years"}
+{"id": "q31", "question": "How long does a password have to be?", "answerable": true, "doc": "it_access_security", "evidence": "at least 14 characters"}
+{"id": "q32", "question": "How fast is a departing employee's access removed?", "answerable": true, "doc": "it_access_security", "evidence": "within 4 hours of termination"}
+{"id": "q33", "question": "How soon after discovery must a security incident be reported?", "answerable": true, "doc": "it_access_security", "evidence": "within 1 hour of discovery"}
+{"id": "q34", "question": "How many vacation days do full-timers get each year?", "answerable": true, "doc": "hr_leave_policy", "evidence": "25 days of annual leave"}
+{"id": "q35", "question": "How many unused days can I roll into next year?", "answerable": true, "doc": "hr_leave_policy", "evidence": "maximum of 5 days"}
+{"id": "q36", "question": "How many weeks of paid parental leave does each parent get?", "answerable": true, "doc": "hr_leave_policy", "evidence": "16 weeks"}
+{"id": "q37", "question": "What credit limit does a brand-new customer start with?", "answerable": true, "doc": "customer_credit_policy", "evidence": "initial credit limit of EUR 10,000"}
+{"id": "q38", "question": "After how many days overdue is a customer put on credit hold?", "answerable": true, "doc": "customer_credit_policy", "evidence": "60 days overdue"}
+{"id": "q39", "question": "How long after delivery will we accept a customer return?", "answerable": true, "doc": "quality_returns", "evidence": "within 30 days of delivery"}
+{"id": "q40", "question": "What fee do we charge when a customer sends back a working product?", "answerable": true, "doc": "quality_returns", "evidence": "restocking fee of 15%"}
+{"id": "u01", "question": "What is the company dress code?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u02", "question": "How many days of remote work are allowed per week?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u03", "question": "What is the CEO's annual salary?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u04", "question": "What pension contribution does the company make?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u05", "question": "Who is our external auditor?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u06", "question": "Are pets allowed in the office?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u07", "question": "What is our carbon emissions reduction target?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u08", "question": "How do I request a company car?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u09", "question": "What is the current share price?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u10", "question": "What is the annual bonus structure for managers?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u11", "question": "Which cloud provider hosts our ERP system?", "answerable": false, "doc": null, "evidence": null}
+{"id": "u12", "question": "What is the policy for approving overtime pay?", "answerable": false, "doc": null, "evidence": null}

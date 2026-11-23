@@ -1,0 +1,1053 @@
+{
+  "corpus": {
+    "documents": 12,
+    "chunks": 35,
+    "questions": 52,
+    "answerable": 40,
+    "unanswerable": 12
+  },
+  "retrieval": {
+    "sparse": {
+      "n": 40,
+      "recall@1": 82.5,
+      "recall@3": 100.0,
+      "recall@5": 100.0,
+      "mrr": 0.908
+    },
+    "dense": {
+      "n": 40,
+      "recall@1": 82.5,
+      "recall@3": 100.0,
+      "recall@5": 100.0,
+      "mrr": 0.904
+    },
+    "hybrid": {
+      "n": 40,
+      "recall@1": 82.5,
+      "recall@3": 100.0,
+      "recall@5": 100.0,
+      "mrr": 0.904
+    }
+  },
+  "failures": {
+    "hybrid_recall@3_misses": [],
+    "hybrid_top1_misses": [
+      {
+        "id": "q04",
+        "question": "Which low-value catalogue orders skip approval?",
+        "gold_rank": 2
+      },
+      {
+        "id": "q05",
+        "question": "How much can a Department Head sign off?",
+        "gold_rank": 2
+      },
+      {
+        "id": "q06",
+        "question": "What is the CFO's approval limit?",
+        "gold_rank": 2
+      },
+      {
+        "id": "q13",
+        "question": "Above what amount is a receipt mandatory?",
+        "gold_rank": 3
+      },
+      {
+        "id": "q18",
+        "question": "How many days does it take to onboard a new vendor?",
+        "gold_rank": 3
+      },
+      {
+        "id": "q32",
+        "question": "How fast is a departing employee's access removed?",
+        "gold_rank": 2
+      },
+      {
+        "id": "q40",
+        "question": "What fee do we charge when a customer sends back a working product?",
+        "gold_rank": 2
+      }
+    ]
+  },
+  "stemming_ablation": {
+    "sparse": {
+      "no_stemming": {
+        "n": 40,
+        "recall@1": 82.5,
+        "recall@3": 95.0,
+        "recall@5": 95.0,
+        "mrr": 0.883
+      },
+      "stemming": {
+        "n": 40,
+        "recall@1": 82.5,
+        "recall@3": 100.0,
+        "recall@5": 100.0,
+        "mrr": 0.908
+      }
+    },
+    "dense": {
+      "no_stemming": {
+        "n": 40,
+        "recall@1": 82.5,
+        "recall@3": 95.0,
+        "recall@5": 95.0,
+        "mrr": 0.879
+      },
+      "stemming": {
+        "n": 40,
+        "recall@1": 82.5,
+        "recall@3": 100.0,
+        "recall@5": 100.0,
+        "mrr": 0.904
+      }
+    },
+    "hybrid": {
+      "no_stemming": {
+        "n": 40,
+        "recall@1": 82.5,
+        "recall@3": 95.0,
+        "recall@5": 95.0,
+        "mrr": 0.879
+      },
+      "stemming": {
+        "n": 40,
+        "recall@1": 82.5,
+        "recall@3": 100.0,
+        "recall@5": 100.0,
+        "mrr": 0.904
+      }
+    }
+  },
+  "abstention": {
+    "chosen_threshold": 0.22,
+    "tied_best_thresholds": [
+      0.22,
+      0.22
+    ],
+    "dev": {
+      "n": 26,
+      "answerable_correct": 95.0,
+      "false_abstain": 5.0,
+      "unanswerable_abstained": 100.0,
+      "balanced_acc": 97.5
+    },
+    "test": {
+      "n": 26,
+      "answerable_correct": 75.0,
+      "false_abstain": 20.0,
+      "unanswerable_abstained": 83.3,
+      "balanced_acc": 79.2
+    },
+    "all_no_abstention": {
+      "answerable_correct": 97.5,
+      "false_abstain": 0.0,
+      "unanswerable_abstained": 0.0,
+      "balanced_acc": 48.8
+    },
+    "dev_curve": [
+      {
+        "threshold": 0.0,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 0.0,
+        "balanced_acc": 50.0
+      },
+      {
+        "threshold": 0.01,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.02,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.03,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.04,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.05,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.06,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.07,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.08,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.09,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.1,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.11,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.12,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.13,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.14,
+        "answerable_correct": 100.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 83.3
+      },
+      {
+        "threshold": 0.15,
+        "answerable_correct": 95.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 89.2
+      },
+      {
+        "threshold": 0.16,
+        "answerable_correct": 95.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 89.2
+      },
+      {
+        "threshold": 0.17,
+        "answerable_correct": 95.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 89.2
+      },
+      {
+        "threshold": 0.18,
+        "answerable_correct": 95.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 89.2
+      },
+      {
+        "threshold": 0.19,
+        "answerable_correct": 95.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 89.2
+      },
+      {
+        "threshold": 0.2,
+        "answerable_correct": 95.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 89.2
+      },
+      {
+        "threshold": 0.21,
+        "answerable_correct": 95.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 89.2
+      },
+      {
+        "threshold": 0.22,
+        "answerable_correct": 95.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 97.5
+      },
+      {
+        "threshold": 0.23,
+        "answerable_correct": 90.0,
+        "false_abstain": 10.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 95.0
+      },
+      {
+        "threshold": 0.24,
+        "answerable_correct": 85.0,
+        "false_abstain": 15.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 92.5
+      },
+      {
+        "threshold": 0.25,
+        "answerable_correct": 80.0,
+        "false_abstain": 20.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 90.0
+      },
+      {
+        "threshold": 0.26,
+        "answerable_correct": 75.0,
+        "false_abstain": 25.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 87.5
+      },
+      {
+        "threshold": 0.27,
+        "answerable_correct": 70.0,
+        "false_abstain": 30.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 85.0
+      },
+      {
+        "threshold": 0.28,
+        "answerable_correct": 70.0,
+        "false_abstain": 30.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 85.0
+      },
+      {
+        "threshold": 0.29,
+        "answerable_correct": 65.0,
+        "false_abstain": 35.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 82.5
+      },
+      {
+        "threshold": 0.3,
+        "answerable_correct": 65.0,
+        "false_abstain": 35.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 82.5
+      },
+      {
+        "threshold": 0.31,
+        "answerable_correct": 55.0,
+        "false_abstain": 45.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 77.5
+      },
+      {
+        "threshold": 0.32,
+        "answerable_correct": 55.0,
+        "false_abstain": 45.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 77.5
+      },
+      {
+        "threshold": 0.33,
+        "answerable_correct": 55.0,
+        "false_abstain": 45.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 77.5
+      },
+      {
+        "threshold": 0.34,
+        "answerable_correct": 55.0,
+        "false_abstain": 45.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 77.5
+      },
+      {
+        "threshold": 0.35,
+        "answerable_correct": 55.0,
+        "false_abstain": 45.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 77.5
+      },
+      {
+        "threshold": 0.36,
+        "answerable_correct": 50.0,
+        "false_abstain": 50.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 75.0
+      },
+      {
+        "threshold": 0.37,
+        "answerable_correct": 45.0,
+        "false_abstain": 55.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 72.5
+      },
+      {
+        "threshold": 0.38,
+        "answerable_correct": 45.0,
+        "false_abstain": 55.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 72.5
+      },
+      {
+        "threshold": 0.39,
+        "answerable_correct": 45.0,
+        "false_abstain": 55.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 72.5
+      },
+      {
+        "threshold": 0.4,
+        "answerable_correct": 40.0,
+        "false_abstain": 60.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 70.0
+      },
+      {
+        "threshold": 0.41,
+        "answerable_correct": 40.0,
+        "false_abstain": 60.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 70.0
+      },
+      {
+        "threshold": 0.42,
+        "answerable_correct": 40.0,
+        "false_abstain": 60.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 70.0
+      },
+      {
+        "threshold": 0.43,
+        "answerable_correct": 35.0,
+        "false_abstain": 65.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 67.5
+      },
+      {
+        "threshold": 0.44,
+        "answerable_correct": 30.0,
+        "false_abstain": 70.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 65.0
+      },
+      {
+        "threshold": 0.45,
+        "answerable_correct": 30.0,
+        "false_abstain": 70.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 65.0
+      },
+      {
+        "threshold": 0.46,
+        "answerable_correct": 25.0,
+        "false_abstain": 75.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 62.5
+      },
+      {
+        "threshold": 0.47,
+        "answerable_correct": 20.0,
+        "false_abstain": 80.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 60.0
+      },
+      {
+        "threshold": 0.48,
+        "answerable_correct": 20.0,
+        "false_abstain": 80.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 60.0
+      },
+      {
+        "threshold": 0.49,
+        "answerable_correct": 20.0,
+        "false_abstain": 80.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 60.0
+      },
+      {
+        "threshold": 0.5,
+        "answerable_correct": 20.0,
+        "false_abstain": 80.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 60.0
+      },
+      {
+        "threshold": 0.51,
+        "answerable_correct": 15.0,
+        "false_abstain": 85.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 57.5
+      },
+      {
+        "threshold": 0.52,
+        "answerable_correct": 10.0,
+        "false_abstain": 90.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 55.0
+      },
+      {
+        "threshold": 0.53,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.54,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.55,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.56,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.57,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.58,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.59,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.6,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      }
+    ],
+    "test_points": [
+      {
+        "threshold": 0.0,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 0.0,
+        "balanced_acc": 47.5
+      },
+      {
+        "threshold": 0.01,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.02,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.03,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.04,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.05,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.06,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.07,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.08,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.09,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.1,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 33.3,
+        "balanced_acc": 64.2
+      },
+      {
+        "threshold": 0.11,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 50.0,
+        "balanced_acc": 72.5
+      },
+      {
+        "threshold": 0.12,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 50.0,
+        "balanced_acc": 72.5
+      },
+      {
+        "threshold": 0.13,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 50.0,
+        "balanced_acc": 72.5
+      },
+      {
+        "threshold": 0.14,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 80.8
+      },
+      {
+        "threshold": 0.15,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 80.8
+      },
+      {
+        "threshold": 0.16,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 80.8
+      },
+      {
+        "threshold": 0.17,
+        "answerable_correct": 95.0,
+        "false_abstain": 0.0,
+        "unanswerable_abstained": 66.7,
+        "balanced_acc": 80.8
+      },
+      {
+        "threshold": 0.18,
+        "answerable_correct": 90.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 86.7
+      },
+      {
+        "threshold": 0.19,
+        "answerable_correct": 90.0,
+        "false_abstain": 5.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 86.7
+      },
+      {
+        "threshold": 0.2,
+        "answerable_correct": 85.0,
+        "false_abstain": 10.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 84.2
+      },
+      {
+        "threshold": 0.21,
+        "answerable_correct": 85.0,
+        "false_abstain": 10.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 84.2
+      },
+      {
+        "threshold": 0.22,
+        "answerable_correct": 75.0,
+        "false_abstain": 20.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 79.2
+      },
+      {
+        "threshold": 0.23,
+        "answerable_correct": 70.0,
+        "false_abstain": 25.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 76.7
+      },
+      {
+        "threshold": 0.24,
+        "answerable_correct": 60.0,
+        "false_abstain": 35.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 71.7
+      },
+      {
+        "threshold": 0.25,
+        "answerable_correct": 55.0,
+        "false_abstain": 45.0,
+        "unanswerable_abstained": 83.3,
+        "balanced_acc": 69.2
+      },
+      {
+        "threshold": 0.26,
+        "answerable_correct": 55.0,
+        "false_abstain": 45.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 77.5
+      },
+      {
+        "threshold": 0.27,
+        "answerable_correct": 50.0,
+        "false_abstain": 50.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 75.0
+      },
+      {
+        "threshold": 0.28,
+        "answerable_correct": 50.0,
+        "false_abstain": 50.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 75.0
+      },
+      {
+        "threshold": 0.29,
+        "answerable_correct": 50.0,
+        "false_abstain": 50.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 75.0
+      },
+      {
+        "threshold": 0.3,
+        "answerable_correct": 50.0,
+        "false_abstain": 50.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 75.0
+      },
+      {
+        "threshold": 0.31,
+        "answerable_correct": 50.0,
+        "false_abstain": 50.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 75.0
+      },
+      {
+        "threshold": 0.32,
+        "answerable_correct": 50.0,
+        "false_abstain": 50.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 75.0
+      },
+      {
+        "threshold": 0.33,
+        "answerable_correct": 45.0,
+        "false_abstain": 55.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 72.5
+      },
+      {
+        "threshold": 0.34,
+        "answerable_correct": 40.0,
+        "false_abstain": 60.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 70.0
+      },
+      {
+        "threshold": 0.35,
+        "answerable_correct": 40.0,
+        "false_abstain": 60.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 70.0
+      },
+      {
+        "threshold": 0.36,
+        "answerable_correct": 40.0,
+        "false_abstain": 60.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 70.0
+      },
+      {
+        "threshold": 0.37,
+        "answerable_correct": 40.0,
+        "false_abstain": 60.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 70.0
+      },
+      {
+        "threshold": 0.38,
+        "answerable_correct": 40.0,
+        "false_abstain": 60.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 70.0
+      },
+      {
+        "threshold": 0.39,
+        "answerable_correct": 35.0,
+        "false_abstain": 65.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 67.5
+      },
+      {
+        "threshold": 0.4,
+        "answerable_correct": 30.0,
+        "false_abstain": 70.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 65.0
+      },
+      {
+        "threshold": 0.41,
+        "answerable_correct": 30.0,
+        "false_abstain": 70.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 65.0
+      },
+      {
+        "threshold": 0.42,
+        "answerable_correct": 25.0,
+        "false_abstain": 75.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 62.5
+      },
+      {
+        "threshold": 0.43,
+        "answerable_correct": 25.0,
+        "false_abstain": 75.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 62.5
+      },
+      {
+        "threshold": 0.44,
+        "answerable_correct": 20.0,
+        "false_abstain": 80.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 60.0
+      },
+      {
+        "threshold": 0.45,
+        "answerable_correct": 20.0,
+        "false_abstain": 80.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 60.0
+      },
+      {
+        "threshold": 0.46,
+        "answerable_correct": 20.0,
+        "false_abstain": 80.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 60.0
+      },
+      {
+        "threshold": 0.47,
+        "answerable_correct": 20.0,
+        "false_abstain": 80.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 60.0
+      },
+      {
+        "threshold": 0.48,
+        "answerable_correct": 20.0,
+        "false_abstain": 80.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 60.0
+      },
+      {
+        "threshold": 0.49,
+        "answerable_correct": 10.0,
+        "false_abstain": 90.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 55.0
+      },
+      {
+        "threshold": 0.5,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.51,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.52,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.53,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.54,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.55,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.56,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.57,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.58,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.59,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      },
+      {
+        "threshold": 0.6,
+        "answerable_correct": 5.0,
+        "false_abstain": 95.0,
+        "unanswerable_abstained": 100.0,
+        "balanced_acc": 52.5
+      }
+    ]
+  },
+  "answer_quality_no_abstention": {
+    "answerable_contains_evidence_pct": 97.5
+  },
+  "chunk_size_ablation": {
+    "120": {
+      "chunks": 74,
+      "n": 40,
+      "recall@1": 80.0,
+      "recall@3": 95.0,
+      "recall@5": 100.0,
+      "mrr": 0.874
+    },
+    "300": {
+      "chunks": 35,
+      "n": 40,
+      "recall@1": 82.5,
+      "recall@3": 100.0,
+      "recall@5": 100.0,
+      "mrr": 0.904
+    },
+    "600": {
+      "chunks": 35,
+      "n": 40,
+      "recall@1": 82.5,
+      "recall@3": 100.0,
+      "recall@5": 100.0,
+      "mrr": 0.904
+    },
+    "1200": {
+      "chunks": 35,
+      "n": 40,
+      "recall@1": 82.5,
+      "recall@3": 100.0,
+      "recall@5": 100.0,
+      "mrr": 0.904
+    }
+  },
+  "store_parity": {
+    "questions": 52,
+    "top1_identical_numpy_vs_faiss": 52
+  },
+  "latency_ms": {
+    "mean": 1.53,
+    "p95": 1.92,
+    "n": 52
+  }
+}

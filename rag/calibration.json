@@ -1,0 +1,5 @@
+{
+  "min_confidence": 0.22,
+  "calibrated_on": "dev split (even-indexed questions)",
+  "dev_balanced_accuracy": 97.5
+}
